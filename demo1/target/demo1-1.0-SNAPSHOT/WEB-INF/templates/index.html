@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>这是一个关于springmvc的helloworld首页</title>
+</head>
+<body>
+<h1>首页</h1>
+<a th:href="@{/target}">helloword</a><br/>
+<a th:href="@{/test}">测试@RequestMapping的value属性-->/test</a><br>
+<form th:action="@{/test}" method="post">
+    <input type="submit"> </form>
+<a th:href="@{/testRest/1/admin}">测试占位符</a>
+
+</body>
+</html>
